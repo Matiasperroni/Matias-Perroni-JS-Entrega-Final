@@ -1,0 +1,155 @@
+/* carousel */
+.carousel-item img {
+  width: 100%;
+}
+#carouselExampleInterval {
+  width: 100%;
+}
+.titulo-p {
+  text-align: center;
+  margin-top: 5%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* paginas de productos hombres y mujeres */
+.filtrar-por {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.accordion {
+  width: 90%;
+  font-size: 14px;
+  &-body {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 90%;
+    position: relative;
+    input {
+      transform: translate(32px, 32px);
+    }
+    label {
+      margin: 15px 0;
+    }
+  }
+}
+.contenedor-cartas-y-productos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.contenedor-productos-cartas {
+  margin-top: 10%;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  /* carousel */
+  .carousel-item img {
+    height: 50vh;
+  }
+  /* paginas de productos hombres y mujeres */
+  .filtrar-por {
+    font-size: 40px;
+  }
+  .accordion {
+    font-weight: bold;
+  }
+  .accordion-body input {
+    transform: translate(-80px, 32px);
+  }
+}
+
+.dropdown-menu {
+  min-width:30vw;
+}
+#carritoItems i {
+  color: red !important;
+}
+.dropdown-toggle {
+  background-color: $backgroundColor;
+  color: $fontColor;
+  font-family: $fontType;
+  font-size: 12px;
+}
+
+
+#realizar-pedido {
+  background-color: #36A9AE;
+  background-image: linear-gradient(#37ADB2, #329CA0);
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+#realizar-pedido:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
+#realizar-pedido:active{
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+#realizar-pedido:disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}
+#realizar-pedido:disabled:active {
+  pointer-events: none;
+}
+#realizar-pedido:disabled:hover {
+  box-shadow: none;
+} 
+
+#vaciar-carrito {
+  background-color: red;
+  background-image: linear-gradient(red, red);
+  border: 1px solid red;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+}
+#vaciar-carrito:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
+#vaciar-carrito:active{
+  box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+#vaciar-carrito:disabled {
+  cursor: not-allowed;
+  opacity: .6;
+}
+#vaciar-carrito:disabled:active {
+  pointer-events: none;
+}
+#vaciar-carrito:disabled:hover {
+  box-shadow: none;
+} 

@@ -1,0 +1,21 @@
+[
+    {"sexo": "h", "nombre": "Reloj", "marca": "Nike", "precio": 1500, "id": 1, "imagen": "./img/hombre-accesorio.jpg"},
+    {"sexo": "h", "nombre": "Buzo", "marca": "Adidas", "precio": 2500, "id": 2, "imagen": "./img/hombre-buzo.jpg"},
+    {"sexo": "h", "nombre": "Campera", "marca": "Gucci", "precio": 25500, "id": 3, "imagen": "./img/hombre-campera.jpg"},
+    {"sexo": "h", "nombre": "Pantalon", "marca": "Nike", "precio": 15000, "id": 4, "imagen": "./img/hombre-pantalon.jpg"},
+    {"sexo": "h", "nombre": "Remera", "marca": "Adidas", "precio": 100500, "id": 5, "imagen": "./img/hombre-remera.jpg"},
+    {"sexo": "h", "nombre": "Zapatilla", "marca": "Gucci", "precio": 500, "id": 6, "imagen": "./img/hombre-zapatilla.jpg"},
+    {"sexo": "h", "nombre": "Reloj", "marca": "Gucci", "precio": 11500, "id": 7, "imagen": "./img/hombre-accesorio.jpg"},
+    {"sexo": "h", "nombre": "remera", "marca": "Nike", "precio": 21500, "id": 8, "imagen": "./img/hombre-remera.jpg"},
+    {"sexo": "h", "nombre": "Buzo", "marca": "Nike", "precio": 35500, "id": 9, "imagen": "./img/hombre-buzo.jpg"},
+    {"sexo": "m", "nombre": "Reloj", "marca": "Nike", "precio": 7500, "id": 10, "imagen": "./img/mujer-accesorio.jpg"},
+    {"sexo": "m", "nombre": "Buzo", "marca": "Gucci", "precio": 11500, "id": 11, "imagen": "./img/mujer-buzo.jpg"},
+    {"sexo": "m", "nombre": "Campera", "marca": "Adidas", "precio": 71500, "id": 12, "imagen": "./img/mujer-campera.jpg"},
+    {"sexo": "m", "nombre": "Remera", "marca": "Gucci", "precio": 22500, "id": 13, "imagen": "./img/mujer-remera.jpg"},
+    {"sexo": "m", "nombre": "Zapatilla", "marca": "Nike", "precio": 11500, "id": 14, "imagen": "./img/mujer-calzado.jpg"},
+    {"sexo": "m", "nombre": "Pantalon", "marca": "Adidas", "precio": 41500, "id": 15, "imagen": "./img/mujer-pantalon.jpg"},
+    {"sexo": "m", "nombre": "Reloj", "marca": "Gucci", "precio": 111500, "id": 16, "imagen": "./img/mujer-accesorio.jpg"},
+    {"sexo": "m", "nombre": "zapatilla", "marca": "Adidas", "precio": 51500, "id": 17, "imagen": "./img/mujer-calzado.jpg"},
+    {"sexo": "m", "nombre": "Remera", "marca": "Nike", "precio": 51500, "id": 18, "imagen": "./img/mujer-remera.jpg"},
+    {"sexo": "m", "nombre": "Campera", "marca": "Nike", "precio": 71500, "id": 19, "imagen": "./img/mujer-campera.jpg"}
+]

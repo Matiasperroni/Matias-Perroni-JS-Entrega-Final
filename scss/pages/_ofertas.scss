@@ -1,0 +1,32 @@
+.ofertas-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 5vh 0;
+  &-txt {
+    text-align: center;
+    font-weight: bold;
+  }
+  &-two {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &-three {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      border: 1px solid black;
+      margin: 5vh 0;
+      margin-left: 1vw;
+    }
+    &-first h2,
+    &-second h2 {
+      text-align: center;
+    }
+  }
+  img {
+    width: 90%;
+  }
+}

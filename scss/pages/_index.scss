@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $fontType;
+  box-shadow: none;
+}
+li {
+  list-style: none;
+}
+/* header */
+.head-wrapper {
+  width: 100%;
+  height: 25vh;
+  background-color: $backgroundColor;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  a {
+    text-decoration: none;
+    color: $fontColor;
+  }
+  &-a-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 15px;
+  }
+  &-ul-num-two {
+    width: 85%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    li {
+      margin: 0 5%;
+      height: 0px;
+    }
+  }
+  &-logoimg {
+    width: auto;
+    height: auto;
+  }
+}
+/* dropdowns */
+.dropdown-contenedor {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  a {
+    color: $fontColor !important;
+    background-color: $backgroundColor !important;
+    border: 0 !important;
+  }
+}
+.carrito {
+  align-items: end;
+  height: 15px;
+}
+/* imagen principal*/
+.imagen-principal-wrapper {
+  width: 100%;
+  position: relative;
+  button {
+    width: 100px;
+    height: 25px;
+    border: 1px solid $fontColor;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    background-color: transparent;
+    color: $fontColor;
+    cursor: pointer;
+    position: absolute;
+    left: 40%;
+    top: 75%;
+  }
+  &-txt {
+    color: $fontColor;
+    font-size: 20px;
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    &-two {
+      color: $fontColor;
+      font-size: 20px;
+      position: absolute;
+      left: 5%;
+      top: 55%;
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+
+/* estilo de las cards */
+.carta-contenedor {
+  position: relative;
+  margin: 2%;
+  width: 250px;
+  padding: 20px;
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 75vh;
+    flex-wrap: wrap;
+  }
+  &-carta {
+    width: 100%;
+    &:hover .carta-contenedor-carta-imgBox img {
+      transform: scale(1.5);
+    }
+    &-contenido {
+      padding: 10px 0;
+    }
+    &-nombre-producto h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+    &-precio-producto h2 {
+      font-size: 20px;
+      font-weight: bolder;
+      color: red;
+    }
+    &-imgBox {
+      position: relative;
+      width: 100%;
+      height: 310px;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s ease-in-out;
+        transform-origin: right;
+      }
+    }
+  }
+}
+.carta-action {
+  position: absolute;
+  right: -5px;
+  top: 10px;
+  li {
+    position: relative;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translateX(60px);
+    &:nth-child(2) {
+      transition-delay: 0.15s;
+    }
+    &:nth-child(3) {
+      transition-delay: 0.3s;
+    }
+    &:hover {
+      background-color: red;
+      color: $fontColor;
+      span {
+        opacity: 1;
+        transform: translateY(-50%) translateX(0);
+      }
+    }
+    span {
+      position: absolute;
+      right: 50px;
+      top: 50%;
+      transform: translateY(-50%) translateX(-20px);
+      font-size: 12px;
+      font-weight: bold;
+      white-space: nowrap;
+      background-color: $fontColor;
+      border-radius: 4px;
+      pointer-events: none;
+      padding: 4px 6px;
+      color: $backgroundColor;
+      opacity: 0;
+      transition: 0.5s;
+    }
+  }
+}
+.carta-contenedor .carta-contenedor-carta:hover .carta-action li {
+  transform: translateX(0);
+}
+/* productos populares */
+
+.prod-popular {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  font-size: 24px;
+  &-wrapper-btn-w {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+  }
+  &-wrapper-btn {
+    width: 150px;
+    height: 30px;
+    border: 1px solid black;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+/* oferta verano*/
+.oferta-verano {
+  background-color: $backgroundColor;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 5vh;
+  &-img {
+    width: 90%;
+    height: auto;
+  }
+  &-btn {
+    width: 150px;
+    height: 35px;
+    border: 1px solid $fontColor;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    background-color: transparent;
+    color: $fontColor;
+    cursor: pointer;
+    position: absolute;
+    top: 20vh;
+  }
+}
+// inicio footer
+.footer-wrapper {
+  height: 130px;
+  background-color: $backgroundColor;
+  font-size: 10px;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-areas:
+    " area1 area2 area5 area6"
+    "area3 area4 area7 area8";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  padding-top: 5vw;
+  row-gap: 5vh;
+  padding-left: 5px;
+  img {
+    width: 15px;
+    height: 15px;
+  }
+  &-pol {
+    grid-area: area1;
+  }
+  &-for {
+    grid-area: area2;
+  }
+  &-ayuda {
+    grid-area: area3;
+  }
+  &-tyc {
+    grid-area: area4;
+  }
+  a {
+    text-decoration: none;
+    color: $fontColor;
+  }
+}
+.twitter {
+  grid-area: area5;
+}
+.insta {
+  grid-area: area6;
+}
+.facebook {
+  grid-area: area7;
+}
+.whatsapp {
+  grid-area: area8;
+}
+.twitter a,
+.insta a,
+.facebook a,
+.whatsapp a {
+  padding-left: 5px;
+}
+@media (min-width: 768px) {
+  .oferta-verano {
+    height: 40vh;
+    &-btn {
+      top: 28vh;
+    }
+  }
+}
+@media (min-width: 992px) {
+  /* header */
+  .head-wrapper {
+    height: 64px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    &-a-img {
+      justify-content: flex-start;
+      width: 20vw;
+      padding-top: 0;
+    }
+    &-ul-num-two {
+      width: 40vw;
+    }
+  }
+  /* dropdowns */
+  .dropdown-contenedor {
+    width: auto;
+    margin-top: 3px;
+  }
+  .dropdown button {
+    padding-right: 100px;
+  }
+
+  /* imagen principal*/
+  .imagen-principal-wrapper button {
+    width: 278px;
+    height: 55px;
+    border: 3px solid $fontColor;
+    font-size: 20px;
+    line-height: 23px;
+    left: 40%;
+    top: 80%;
+  }
+  .imagen-principal-wrapper-txt {
+    color: $fontColor;
+    font-size: 40px;
+    top: 50%;
+    &-two {
+      font-size: 40px;
+      left: 5%;
+      top: 60%;
+    }
+  }
+
+  /* productos populares */
+
+  .prod-popular {
+    margin-left: 0;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    &-wrapper-btn-w {
+      padding-right: 0;
+    }
+    &-wrapper-btn {
+      width: 300px;
+      height: 60px;
+      border: 3px solid black;
+      font-size: 20px;
+    }
+  }
+  /* estilo de las cards */
+  .carta-contenedor-wrapper {
+    padding-right: 0;
+  }
+  /* oferta verano*/
+
+  .oferta-verano {
+    height: 670px;
+    &-btn {
+      width: 278px;
+      height: 55px;
+      border: 3px solid $fontColor;
+      font-size: 25px;
+      top: 80vh;
+    }
+  }
+  .footer-wrapper {
+    height: 150px;
+    font-size: 14px;
+    padding-left: 10vw;
+    padding-top: 3vw;
+    column-gap: 5vw;
+    &img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  /* este codigo de abajo es para acomodar el texto junto con los logos de cada uno */
+  .twitter,
+  .insta,
+  .facebook,
+  .whatsapp {
+    display: flex;
+    align-items: center;
+  }
+  .twitter a,
+  .insta a,
+  .facebook a,
+  .whatsapp a {
+    padding-left: 15px;
+  }
+}

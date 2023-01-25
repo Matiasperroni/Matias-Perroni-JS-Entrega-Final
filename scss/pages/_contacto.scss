@@ -1,0 +1,85 @@
+/* contacto */
+.contacto-wrapper {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  min-height: 80vh;
+  padding-left: 5%;
+  margin: 20px 0;
+  &-input-name {
+    width: 90vw;
+    margin: 10px 0;
+  }
+  &-input-mail {
+    width: 90vw;
+    margin: 10px 0;
+    justify-content: flex-end;
+  }
+  &-input-msj {
+    width: 90vw;
+    height: 200px;
+    margin-top: 10px;
+  }
+  &-input-submit {
+    align-self: flex-end;
+    color: #ffffff;
+    background-color: #121212;
+    border-radius: 2px;
+    width: 75px;
+    height: 32px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  &-two {
+    display: flex;
+    flex-direction: column;
+    h3,
+    h4 {
+      font-weight: bold;
+    }
+    &-mapa {
+      width: 90vw;
+      height: 200px;
+    }
+  }
+}
+.con-form {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.tel-wrapper {
+  display: flex;
+}
+.telefono-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+@media (min-width: 992px) {
+  /* contacto */
+  .contacto-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    &-input-name {
+      width: 400px;
+    }
+    &-input-mail {
+      width: 400px;
+    }
+    &-input-msj {
+      width: 400px;
+      height: 250px;
+    }
+    &-input-submit {
+      width: 90px;
+      height: 37px;
+    }
+    &-two-mapa {
+      width: 600px;
+      height: 400px;
+    }
+  }
+}

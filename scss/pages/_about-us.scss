@@ -1,0 +1,31 @@
+/* quienes somos */
+.about-us-wrapper {
+  display: flex;
+  margin: 5vh 0;
+  padding: 0 5vw;
+  flex-direction: column;
+  width: 90%;
+  img {
+    width: 80vw;
+    padding-left: 7vw;
+  }
+}
+.about-us-text {
+  width: 100%;
+  padding-left: 7vw;
+}
+@media (min-width: 992px) {
+  /* quienes somos */
+  .about-us-wrapper {
+    flex-direction: row;
+    width: 100%;
+    img {
+      width: 800px;
+      height: 500px;
+      padding-left: 5vw;
+    }
+  }
+  .about-us-text {
+    padding-left: 0;
+  }
+}
