@@ -45,12 +45,12 @@ fetch("./data/data.json")
                   <h2 class="precioPro">${producto.precio}</h2>
     </div>
 </div>`;
-            if (ventana === "/hombres.html" && producto.sexo === "h") {
+            if (ventana === "/Matias-Perroni-JS-Entrega-Final/hombres.html" && producto.sexo === "h") {
                 const divCreado = document.createElement("div");
                 divCreado.classList.add("carta-contenedor");
                 contenedorDeProductos.append(divCreado);
                 divCreado.innerHTML = creadorCarta;
-            } else if (ventana === "/mujeres.html" && producto.sexo === "m") {
+            } else if (ventana === "/Matias-Perroni-JS-Entrega-Final/mujeres.html" && producto.sexo === "m") {
                 const divCreado = document.createElement("div");
                 divCreado.classList.add("carta-contenedor");
                 contenedorDeProductos.append(divCreado);
